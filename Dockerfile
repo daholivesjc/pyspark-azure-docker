@@ -9,7 +9,6 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
-RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip --no-cache-dir install pyspark==3.2.0
 RUN pip install findspark
 RUN pip install xlrd
